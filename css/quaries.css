@@ -120,6 +120,12 @@
     .hw7-button_center{
         margin: 5em auto;
     }
+    .hw7-arrow-up__footer{
+        position: fixed;
+        right: inherit;
+        bottom: 1em;
+    }
+   
     
 }    
 @media screen and (max-width: 720px){ 

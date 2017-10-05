@@ -3,6 +3,7 @@
     margin: 0em;
     box-sizing: border-box;
     border: 0em;
+    border-collapse: collapse;
 }
 img{
     max-width: 100%;
@@ -39,8 +40,8 @@ progress[value] {
         appearance: none;    
         background-color:black;    
         width: 100%;    
-        height: 2px;
-        margin: 0.3em 0px;    
+        height: 0.07em;
+        margin: 0.3em 0em;    
 }    
 progress[value]::-webkit-progress-bar {    
         background-color: white;     
@@ -50,7 +51,6 @@ progress[value]::-webkit-progress-value {
 }
 /* Wrappers style */
 .hw7-container{
-    max-width: 1500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -64,7 +64,7 @@ progress[value]::-webkit-progress-value {
     justify-content: flex-start;
     padding: 1.5em 1.4em 0em;
 }
-.hw7-wrapper_align_center{
+.hw7-wrapper_center{
     justify-content: center;
     align-items: center;
 }
@@ -90,7 +90,7 @@ progress[value]::-webkit-progress-value {
 .hw7-section_xl{
     height: 39em;
 }
-.hw7-section_align_center{
+.hw7-section_center{
     justify-content: center;
     align-content: center;
     text-align: center
@@ -190,7 +190,7 @@ progress[value]::-webkit-progress-value {
 .hw7-col-md_bg_black{
     background-color: #161616;
 }
-.hw7-col_align_center{
+.hw7-col_center{
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -210,11 +210,13 @@ progress[value]::-webkit-progress-value {
     display: flex;
     padding: 0.75em 0.4em;
     color: #747589;
+    border: 0.07em solid transparent;
     font-size: 0.8em;
+    transition: all ease-in-out 0.3s;
 }
 .hw7-nav__elem:hover{
     color:#deb460;
-    border: 1px solid #deb460;
+    border: 0.07em solid #deb460;
 }
 /* Content style */
 .hw7-content{
@@ -222,14 +224,14 @@ progress[value]::-webkit-progress-value {
     flex-direction: column;
     justify-content: flex-start;
 }
-.hw7-content_align_center{
+.hw7-content_center{
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 .hw7-content__text{
     /* display: flex; */
-    padding: 0.2em 0px;
+    padding: 0.2em 0em;
     line-height: 1.5em;
     word-wrap: break-word;
 }
@@ -249,7 +251,7 @@ progress[value]::-webkit-progress-value {
     width: 2.5em;
     height: auto;
     display: flex;
-    margin: 2em 0px;
+    margin: 2em 0em;
 }
 .hw7-content__text_grey{
     color: #94918a;
@@ -283,7 +285,7 @@ progress[value]::-webkit-progress-value {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2.5em 0px;
+    padding: 2.5em 0em;
 }
 .hw7-telephone, .hw7-email-link, .hw7-global-link{
     display: flex;
@@ -293,7 +295,7 @@ progress[value]::-webkit-progress-value {
 .hw7-telephone__number, .hw7-telephone__logo, .hw7-email-link__logo, .hw7-email-link__link,
 .hw7-global-link__logo, .hw7-global-link__link{
     display: flex;
-    margin: 0.65em 1em 0.65em 0px;
+    margin: 0.65em 1em 0.65em 0em;
     color:#ABADA3;
 }
 .hw7-telephone__logo, .hw7-email-link__logo, .hw7-global-link__logo{
@@ -315,11 +317,11 @@ progress[value]::-webkit-progress-value {
     cursor: pointer;
 } 
 .hw7-button_s{
-    width: 170px;
-    border:3px solid #252b29;
+    width: 10em;
+    border:0.2em solid #252b29;
 }
 .hw7-button_l{
-    width: 300px;
+    width: 17em;
 }
 .hw7-button_orange:hover{
     color: #e7aa57;
@@ -332,15 +334,15 @@ progress[value]::-webkit-progress-value {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 1.7em 0px;
+    margin: 1.7em 0em;
 }
 .hw7-form__text, .hw7-form__email, .hw7-form__textarea{
     display: flex;
     width: 100%;
-    margin: 0.5em 0px;
+    margin: 0.5em 0em;
     padding: 0.45em;
     background: transparent;
-    border-bottom:1px solid #e7aa57;
+    border-bottom:0.07em solid #e7aa57;
     color: white;
 }
 textarea:-moz-placeholder{
@@ -369,5 +371,6 @@ textarea:-moz-placeholder{
  }  
  .hw7-arrow-up__footer{
      position: fixed;
+     right: 2em;
      bottom: 1em;
  }
