@@ -117,6 +117,11 @@
     .hw7-content-s__text_lightinggrey{
         color: #DFDBD2;
     }
+    .hw7-content-s__center{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .hw7-button_center{
         margin: 5em auto;
     }
@@ -124,9 +129,7 @@
         position: fixed;
         right: inherit;
         bottom: 1em;
-    }
-   
-    
+    }      
 }    
 @media screen and (max-width: 720px){ 
     .hw7-content-s__text_hidden{
