@@ -89,7 +89,6 @@ body {
   flex: 0 0 14.28%;
   flex-direction: column;
   max-width: 14.28%;
-  height: 2em;
   background-color: #f6f6f6;
   padding: 0.1em;
 }
