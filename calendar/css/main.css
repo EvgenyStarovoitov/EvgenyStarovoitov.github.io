@@ -32,17 +32,17 @@ body {
   border-radius: 3px;
 }
 
-.cal-arrow_left, .cal-arrow_right{
+.arrow_left, .arrow_right{
   width: 1.5em;
   height: 1.5em;
   cursor: pointer;
 }
 
-.cal-arrow_left{
+.arrow_left{
   background: url(../img/arrow-left.png) no-repeat;
 }
 
-.cal-arrow_right{
+.arrow_right{
   background: url(../img/arrow-right.png) no-repeat;
 }
 
@@ -50,6 +50,7 @@ body {
   display: flex;
   margin: 0.25em;
 }
+
 .cal__header {
   padding: 1em 1em;
   align-items: center;
@@ -57,10 +58,11 @@ body {
   border-radius: 3px;
 }
 
-.cal__header__label {
+.label {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .cal__week {
@@ -70,7 +72,7 @@ body {
 .cal__week span {
   font-size: 1.2em;
   max-width: 14.28%;
-  padding: 1em 1em;
+  padding: 0.75em 0.75em;
   flex: 0 0 14.28%;
   flex-direction: column;
   font-weight: bold;
@@ -87,6 +89,7 @@ body {
   flex: 0 0 14.28%;
   flex-direction: column;
   max-width: 14.28%;
+  height: 2em;
   background-color: #f6f6f6;
   padding: 0.1em;
 }

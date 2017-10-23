@@ -47,13 +47,6 @@ var calendar = {
       }
     };
 
-    if (this.date.getTime() <= this.todaysDate.getTime() - 1) {
-      newDay.classList.add('cal__date--disabled')
-    } else {
-      newDay.classList.add('cal__date--active')
-      newDay.setAttribute('data-calendar-status', 'active')
-    }
-
     if (this.date.toString() === this.todaysDate.toString()) {
       newDay.classList.add('cal__date_today')
     }
@@ -71,7 +64,6 @@ var calendar = {
 
     this.date.setDate(1)
     this.date.setMonth(this.date.getMonth() - 1)
-
     this.label.innerHTML = this.monthsAsString(this.date.getMonth()) + ' ' + this.date.getFullYear()
   },
   //Return month from array
