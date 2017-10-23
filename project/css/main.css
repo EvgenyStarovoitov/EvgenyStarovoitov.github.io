@@ -193,7 +193,7 @@ progress[value]::-webkit-progress-value {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.hw7-nav__header{
+.hw7-nav_left{
     margin-left: 1.75em;
     padding-bottom: 4em;
 }
