@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HW6</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">	
+		<div class="cal">
+			<div class="cal__header">
+				<div class="cal-arrow_left btn-prev"></div>				
+				<div class="cal__header__label label-month">October</div>
+				<div class="cal-arrow_right btn-next"></div>				
+			</div>
+			<div class="cal__week">
+					<span>Su</span> <span>Mo</span> <span>Tu</span> <span>We</span> <span>Th</span> <span>Fr</span> <span>Sa</span> 
+			</div>
+			<div class="cal__body init-month">
+			</div>
+		</div>
+	</div>
+	<script src="js/calendar.js"></script>
+	<script>
+		// Or can use focus on element if use like a dropdown
+		window.addEventListener('load', function () {
+		  calendar.init();
+		})
+	</script>
+</body>
+</html>
